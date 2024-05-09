@@ -1,0 +1,128 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css?family=Merienda:700|Montserrat:300,700');
+@import url('https://fonts.cdnfonts.com/css/lemon-milk');
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0px;
+  /* height: 100%; */
+  min-height: 100vh;
+}
+
+
+.container {
+  min-height: 100vh;
+  background: rgb(200,58,33);
+  background: -moz-linear-gradient(-140deg, rgba(200,58,33,1) 0%, rgba(255,255,255,1) 98%);
+  background: -webkit-linear-gradient(-140deg, rgba(200,58,33,1) 0%, rgba(255,255,255,1) 98%);
+  background: linear-gradient(-140deg, rgba(200,58,33,1) 0%, rgba(255,255,255,1) 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c83a21',endColorstr='#ffffff',GradientType=1);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+}
+
+.header .left-content {
+  width: 60%;
+  padding: 20px;
+}
+
+.header .left-content .title {
+  font-family: 'LEMON MILK';
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  margin-left: 100px;
+}
+
+.header .left-content .text {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-left: 100px;
+  line-height: 34px;
+}
+
+.header .left-content .bold {
+  background-color: #161A1D;
+  padding: 0 10px;
+  color: #f5f3f4;
+  text-wrap: nowrap;
+}
+
+.header .left-content .orange {
+  color: #A4161A !important;
+  text-wrap: nowrap;
+}
+
+.header .left-content .button {
+  width: 195px;
+  height: 40px;
+  background-color: #A4161A;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 100px;
+  transition: 0.3s ease;
+  text-decoration: none;
+
+  text-align: center;
+ 
+  font-family: 'LEMON MILK';
+
+  color: #f5f3f4;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 32px;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.header .left-content .button:hover img {
+  /* filter: brightness(0) saturate(100%) invert(2%) sepia(2%) saturate(7236%) hue-rotate(277deg) brightness(83%) contrast(96%); Feito em um gerador */
+  transition: 0.3s ease;
+}
+
+.header .left-content .button:hover {
+  background-color: #C83A21;
+  /* color: #0B090A; */
+  transition: 0.3s ease;
+}
+
+.header .left-content .button img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  transition: 0.3s ease;
+}
+
+.header .right-content {
+  width: 40%;
+  padding: 20px 0;
+}
+
+.header .right-content img {
+  float: right;
+  margin-top: 15vh;
+  overflow: hidden;
+  /* z-index: -1; */
+}
+
+.brand-font {
+  font-family: 'Kolker Brush';
+  font-size: 58px;
+  padding: 0 10px;
+}

@@ -1,0 +1,312 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.nav-bar {
+
+}
+
+.nav-bar .right {
+
+}
+
+.nav-bar .right .book-button {
+
+}
+
+.nav-bar .nav-link {
+
+}
+
+.nav-bar .active {
+
+}
+
+
+
+
+
+.container {
+  /* background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  /* width: 100%; */
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, rgb(200, 58, 33) 0%, rgb(255, 255, 255) 100%);
+  /* width: 1440px; */
+  height: 1407px;
+  position: relative;
+}
+
+.container .div {
+}
+
+.container .sushis {
+  position: absolute;
+  width: 414px;
+  height: 636px;
+  top: 122px;
+  left: 1026px;
+}
+
+.container .nav-bar {
+  position: absolute;
+  /* width: 95%; */
+  height: 86px;
+  top: 25px;
+  left: 30px;
+  right: 30px;
+  background-color: #161a1d;
+  border-radius: 25px;
+  box-shadow: 6px 4px 6px #00000040;
+}
+
+.container .nav {
+  position: absolute;
+  /* width: 456px; */
+  /* height: 40px; */
+  /* top: 23px; */
+  /* margin: auto; */
+
+  float: right;
+  /* left: 903px; */
+}
+
+.container .btn-reservar-entrada {
+  position: absolute;
+  width: 195px;
+  height: 40px;
+  top: 0;
+  left: 255px;
+  background-color: #c83a21;
+  border-radius: 30px;
+}
+
+.container .butao {
+  position: relative;
+  width: 157px;
+  height: 32px;
+  top: 4px;
+  left: 21px;
+}
+
+.container .talheres {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  top: 5px;
+  left: 0;
+}
+
+.container .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 31px;
+  font-family: "Merienda", Helvetica;
+  font-weight: 700;
+  color: #f5f3f4;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.container .text-wrapper-2 {
+  position: absolute;
+  top: 4px;
+  left: 68px;
+  font-family: "Merienda", Helvetica;
+  font-weight: 700;
+  color: #f5f3f4;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.container .overlap-group {
+  width: 41px;
+  height: 32px;
+  top: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.container .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Merienda", Helvetica;
+  font-weight: 700;
+  color: #f5f3f4;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.container .line {
+  position: absolute;
+  width: 41px;
+  height: 2px;
+  top: 25px;
+  left: 0;
+}
+
+.container .text-wrapper-4 {
+  position: absolute;
+  top: 4px;
+  left: 168px;
+  font-family: "Merienda", Helvetica;
+  font-weight: 700;
+  color: #f5f3f4;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.container .logo-completo {
+  position: absolute;
+  width: 198px;
+  height: 63px;
+  top: 11px;
+  left: 22px;
+}
+
+.container .o-melhor-do-sushi-em {
+  position: absolute;
+  width: 93px;
+  height: 6px;
+  top: 42px;
+  left: 83px;
+}
+
+.container .sushi-fest {
+  position: absolute;
+  width: 130px;
+  height: 24px;
+  top: 15px;
+  left: 68px;
+}
+
+.container .salmon {
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  top: 0;
+  left: 0;
+  background-color: #0b090a;
+  border-radius: 31.32px/31.37px;
+  transform: rotate(-0.16deg);
+}
+
+.container .mask-group-wrapper {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  top: 3px;
+  left: 3px;
+  background-color: #edebe3;
+  border-radius: 27.96px/28.01px;
+}
+
+.container .mask-group {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 6px;
+  left: 6px;
+  transform: rotate(0.16deg);
+}
+
+.container .datas {
+  position: absolute;
+  width: 329px;
+  height: 95px;
+  top: 791px;
+  left: 477px;
+}
+
+.container .overlap {
+  width: 134px;
+  height: 95px;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+.container .element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "LEMON MILK-Medium", Helvetica;
+  font-weight: 500;
+  color: #0b090a;
+  font-size: 70px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .text-wrapper-5 {
+  position: absolute;
+  top: 0;
+  left: 51px;
+  font-family: "LEMON MILK-Regular", Helvetica;
+  font-weight: 400;
+  color: #c83a21;
+  font-size: 70px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .text-wrapper-6 {
+  position: absolute;
+  top: 0;
+  left: 151px;
+  font-family: "LEMON MILK-Regular", Helvetica;
+  font-weight: 400;
+  color: #c83a21;
+  font-size: 70px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .lorem-ipsum-dolor {
+  position: absolute;
+  width: 506px;
+  top: 415px;
+  left: 120px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .bem-vindo-ao-teu {
+  position: absolute;
+  width: 481px;
+  top: 258px;
+  left: 122px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
