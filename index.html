@@ -21,11 +21,12 @@
 
     <!-- Menu de Navegação -->
     <div class="right">
-      <a href="#home" class="nav-link active">Home</a>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#info" class="nav-link">Informações</a>
       <a href="#about-us" class="nav-link">Sobre-nós</a>
-      <a href="#contacts" class="nav-link">Contatos</a>
+      <a href="#contact" class="nav-link">Contatos</a>
       <!-- Botão "Reserver Entrada" -->
-      <a href="#" class="book-button">
+      <a href="#" class="book-button" id="book-button">
         <img class="talheres" src="assets/images/talheres.svg" alt="" />
         <span>Reservar Entrada</span>
       </a>
@@ -34,54 +35,232 @@
   <!-- / NavBar -->
   <!-- Home Section -->
   <div class="container">
-    <div class="header">
+    <div id="home" class="header">
       <div class="left-content">
         <h1 class="title">O TEU FESTIVAL DE SUSHI<br />ESTÁ DE VOLTA</h1>
         <p class="text">
-          Prepara-te, pois a 15ª Edição do<span class="brand-font">Sushi Fest</span> vai acontecer de <span
-            class="orange">9 a 11 de agosto</span> no Pavilhão do Mar!<br />Do que estás à espera?
+          Prepara-te, pois a 15ª Edição do<span class="brand-font">Sushi &nbsp;Fest</span> vai acontecer de <span
+            class="bold">9 a 11 de agosto</span> no Pavilhão do Mar!<br />Do que estás à espera?
         </p>
         <br />
         <br />
         <a href="#" class="button">
           <span>Mais Informações &darr;</span>
         </a>
-        <div class="datas">
-          <span>9 <span class="text-orange">-</span> 11 <span class="text-orange">AGO</span></span>
-        </div>
+      </div>
+      <div class="scrollfooter">
+        <div class="mouse"></div>
+        <span>Ver mais</span>
+        <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+          </path>
+        </svg>
       </div>
       <div class="right-content">
-        <img src="assets/images/sushis.svg" alt="" />
+        <img src="assets/images/sushis.svg" id="shushi" alt="Background" />
+      </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <div id="info" class="info">
+      info
+    </div>
+    <div id="about-us" class="about-us">
+      about-us
+    </div>
+    <div id="contact" class="contact">
+      contact
+    </div>
+  </div>
+
+  <div id="modalEast" class="modal">
+    <div class="content">
+      <div class="header">
+        <h2>Não tá bom?</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="body">
+        <img src="https://iili.io/J4tOt44.gif" alt="Yes">
+      </div>
+    </div>
+  </div>
+
+  <div id="modalBook" class="modal-book">
+    <div class="content">
+      <div class="body">
+        <form action="" method="post">
+          <div class="row">
+            <div class="col">
+              <label for="fname">Nome</label>
+              <input type="text" id="fname" placeholder="Manuel">
+            </div>
+            <div class="col">
+              <label for="lname">Apelido</label>
+              <input type="text" id="lname" placeholder="Raposo">
+            </div>           
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="exemplo@sushifest.pt">
+            </div>           
+            <div class="col">
+              <label for="phone">Telemóvel</label>
+              <input type="tel" id="phone" placeholder="+351 xxx xxx xxx">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="submit">Reservar</button>
+            </div>
+            <div class="col">
+              <a href="#" id="closeBook">Cancelar</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        
       </div>
     </div>
   </div>
 
   <footer class="footer">
-    <div class="footer-left">
-      <img src="assets/images/logo_white.svg" alt="Logo do SushiFest">
-      <p>
-        <span class="label">Sede:</span><br>
-        <span class="info">Edifício SushiLândia<br>
-        Rua Mãe de Deus<br>
-        Ponta Delgada<br>
-        CP: 9560-321<br>
-        Telefone: +351 296 190 000<br>
-        Email: sushi-fest@botelho.pro</span>
-    </p>
+    <div class="addr">
+      <h1 class="logo">SushiLândia SA.</h1>
+      <address>
+        Rua Mãe de Deus<br />9500-321 Ponta Delgada<br />Açores, Portugal<br />
+      </address>
     </div>
-    <div class="footer-right">
-      <form class="newsletter-form">
-        <p>Recebe informações sobre o festival no teu e-mail!</p>
-        <input type="email" placeholder="E-mail" required>
-        <p> Ao realizar a inscrição aceitas os nossos termos e condições sobre a proteção de dados!</p>
-        <button type="submit">Inscrever</button>
-      </form>
+
+    <ul class="nav">
+      <li class="item">
+      </li>
+
+      <li class="item item--extra">
+      </li>
+
+      <li class="item right">
+        <h2 class="title">Zonas</h2>
+
+        <ul class="ul">
+          <li>
+            <a href="#home">Início</a>
+          </li>
+
+          <li>
+            <a href="#about-us">Sobre-Nós</a>
+          </li>
+
+          <li>
+            <a href="#contacts">Contatos</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>2024 &copy; SushiLândia, SA. Todos os direitos reservados.</p>
     </div>
   </footer>
-  <div class="footer-copyright">
-    <p>2024 &copy; SushiLândia Sociedade, S.A. Todos os direitos reservados.</p>
-  </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Função para verificar a posição da página em relação às âncoras
+      function checkAnchorPosition() {
+        var windowBottomPosition = $(window).scrollTop() + $(window).height();
+        var windowHeight = $(window).height();
+
+        $('div[id]').each(function () {
+          var sectionId = $(this).attr('id');
+          var sectionOffset = $(this).offset().top;
+          var sectionHeight = $(this).outerHeight();
+
+          var $anchor = $('a[href="#' + sectionId + '"]');
+          if ($anchor.length) {
+            // Verifica se a seção está mais do que 50% visível na janela de visualização
+            if (sectionOffset < windowBottomPosition - sectionHeight / 2 && sectionOffset + sectionHeight > $(window).scrollTop() + windowHeight / 2) {
+              // Remove a classe 'active' de todos os links
+              $('a.nav-link').removeClass('active');
+              // Adiciona a classe 'active' ao link correspondente à seção visível
+              $anchor.addClass('active');
+              return false; // Sair do loop após encontrar a primeira seção visível
+            }
+          }
+        });
+      }
+
+      // Função para mostrar ou ocultar o botão "Voltar ao Topo" dependendo da posição da página
+      function toggleScrollTopButton() {
+        if ($(window).scrollTop() > 0) {
+          $('#scrollTopButton').fadeIn();
+        } else {
+          $('#scrollTopButton').fadeOut();
+        }
+      }
+
+      // Chama a função no carregamento da página e no evento de scroll
+      $(window).on('load scroll', function () {
+        checkAnchorPosition();
+      });
+
+      // Botão para voltar ao topo
+      $('#scrollTopButton button').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+      });
+
+      // Chama a função no carregamento da página e no evento de scroll
+      $(window).on('load scroll', function () {
+        toggleScrollTopButton();
+      });
+    });
+
+
+
+
+  </script>
+  <script>
+    // Get the modal
+    var modalEast = document.getElementById("modalEast");
+    var modalBook = document.getElementById("modalBook");
+
+    var btnEast = document.getElementById("shushi");
+    var btnBook = document.getElementById("book-button");
+
+    var spanEast = document.getElementsByClassName("close")[0];
+    var closeBook = document.getElementById("closeBook");
+
+    btnEast.onclick = function () {
+      modalEast.style.display = "block";
+    }
+    
+    btnBook.onclick = function () {
+      modalBook.style.display = "block";
+    }
+
+    spanEast.onclick = function () {
+      modalEast.style.display = "none";
+    }
+    
+    closeBook.onclick = function () {
+      modalBook.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modalEast) {
+        modalEast.style.display = "none";
+      }
+      
+      if (event.target == modalBook) {
+        modalBook.style.display = "none";
+      }
+    }
+
+  </script>
 </body>
 
 </html>
