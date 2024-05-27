@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     
-    background-color: #161a1d;
+    background-color: #0b090a;
     border-radius: 25px;
     float: left;
     box-shadow: 6px 4px 6px #00000040;
@@ -99,3 +99,38 @@
     border-bottom: 2px solid currentColor;
   }
   
+  @media only screen and (min-width: 728px) {
+    .hide-lg{
+      display: flex;
+    }
+
+    #menuToogle {
+      display: none !important;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 729px) {
+    .nav-bar .right>.nav-link{
+      display: none !important;
+    }
+    .nav.bar>.right{
+      display: block;
+    }
+    .nav-bar>.right>.nav-link {
+      /* bar layout */
+      display: block;
+      width:100%;
+      height: 100%;
+    }
+    .nav-bar>.right>.nav-link, .book-button{
+      display: none !important;
+  
+    }
+  }
+  
+  /* @media screen and (min-width: 0px) and (max-width: 374px){
+  .e1800-7 .x-menu .x-menu-inline {
+  display: none !important;
+  }
+  } */

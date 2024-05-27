@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container div {
+  width: 19%;
+  height: 300px; /* Adjust height as needed */
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+}
+#div1 {
+  background-image: url('https://www.pexels.com/search/beach/');
+}
+#div2 {
+  background-image: url('https://www.istockphoto.com/photos/ship-bow');
+}
+#div3 {
+  background-image: url('https://www.gettyimages.com/photos/sky-view-from-airplane');
+}
+#div4 {
+  background-image: url('https://www.gettyimages.com/photos/walking-on-beach-at-sunset');
+}
+#div5 {
+  background-image: url('https://www.istockphoto.com/photos/ship-ropes');
+  position: relative;
+}
+#div5::after {
+  content: "EX";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: white;
+}
+#more-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background: white;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div id="div1"></div>
+  <div id="div2"></div>
+  <div id="div3"></div>
+  <div id="div4"></div>
+  <div id="div5">
+    <div id="more-info">MORE INFO</div>
+  </div>
+</div>
+
+</body>
+</html>
