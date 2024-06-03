@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="stylesheet" href="assets/navbar.css" />
   <link rel="shortcut icon" href="assets/images/icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -73,14 +75,81 @@
     </div>
   </div>
   <div class="main-content">
-    <div id="info" class="info">
-      info
+    <div class="card-container" id="info">
+      <div class="card">
+        <div class="card-image">
+          <img src="/assets/images/sushi1.jpg" alt="Sushi card">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title"> <span class="highlight">Entrada Gratuita</span></h2>
+          <p class="card-text">
+            &bull; Copo<br />
+            &bull; Utensílios<br />
+            &bull; Amostras Grátis<br />
+          </p>
+          <h2 class="card-title title2"><span class="underline">Incluído na Reserva</span></h2>
+          <p class="card-text">
+            &bullet; Bebidas Extras<br />
+            &bullet; Entrada Prioritária<br />
+            &bullet; Lugares Reservados<br />
+            &bullet; Estacionamento gratuito<br /> no Parque das Portas do Mar<br />
+          </p>
+        </div>
+      </div>
     </div>
-    <div id="about-us" class="about-us">
-      about-us
+  </div>
+  <div id="about-us" class="about-us">
+    <h2 class="title">SOBRE-NÓS</h2>
+    <p>O SushiFest nasceu em uma conversa entre os dois fundadores, com um bagúlho e uma garrafa de litrosa. A falta do conhecimento da culinária asiática na cultura açoriana foi um dos assuntos da conversa.</p>
+    <div class="quote">
+      <span class="text">"Tá me apetecende comer shushi"</span><br><br><br>
+      <span class="deets"> - Maria "Baquelite" Xapaca, 2024</span>
     </div>
-    <div id="contact" class="contact">
-      contact
+    <p>Com isto os fundadores decidiram que o melhor para o desenvolvimento gastronómico da região seria fazer um festival, com entraga gratuita onde os restaurantes locais poderiam dar a conhecer ao público a sua gastronomia e os seus produtos.</p>
+  </div>
+  <div id="contact" class="contact">
+    <div class="contact-info">
+      <h2 class="title">Contatos</h2>
+      <ul>
+        <li>
+          <i class="bi bi-phone"></i>
+          <span><a href="tel:351296657458">+351 296 657 458</a></span>
+        </li>
+        <li>
+          <i class="bi bi-envelope-at"></i>
+          <span><a href="mailto:info@sushi-fest.com">info@sushi-fest.com</a></span>
+        </li>
+        <li>
+          <i class="bi bi-calendar-date"></i>
+          <span><a href="mailto:reserva@sushi-fest.com">reservas@sushi-fest.com</a></span>
+        </li>
+        <li>
+          <i class="bi bi-map"></i> 
+          <span>Rua Mãe de Deus, 9500-321 Ponta Delgada, Açores, Portugal<br /></span>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-form">
+      <h2 class="title">Envie-nos uma mensagem</h2>
+      <form>
+        <div class="name-surname">
+          <div class="">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Manuel"><br><br>
+  
+          </div>
+          <div class="">
+            <label for="surname">Sobrenome:</label>
+            <input type="text" id="surname" name="surname" placeholder="Pereira"><br><br>
+  
+          </div>
+        </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@sushi-fest.com"><br><br>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" placeholder="Escreva a sua mensagem..."></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
     </div>
   </div>
 
@@ -92,47 +161,6 @@
       </div>
       <div class="body">
         <img src="https://iili.io/J4tOt44.gif" alt="Yes">
-      </div>
-    </div>
-  </div>
-
-  <div id="modalBook" class="modal-book">
-    <div class="content">
-      <div class="body">
-        <form action="" method="post">
-          <div class="row">
-            <div class="col">
-              <label for="fname">Nome</label>
-              <input type="text" id="fname" placeholder="Manuel">
-            </div>
-            <div class="col">
-              <label for="lname">Apelido</label>
-              <input type="text" id="lname" placeholder="Raposo">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" placeholder="exemplo@sushifest.pt">
-            </div>
-            <div class="col">
-              <label for="phone">Telemóvel</label>
-              <input type="tel" id="phone" placeholder="+351 xxx xxx xxx">
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <button type="submit">Reservar</button>
-            </div>
-            <div class="col">
-              <a href="#" id="closeBook">Cancelar</a>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="footer">
-
       </div>
     </div>
   </div>
@@ -161,6 +189,10 @@
           </li>
 
           <li>
+            <a href="#info">Informações</a>
+          </li>
+
+          <li>
             <a href="#about-us">Sobre-Nós</a>
           </li>
 
@@ -179,7 +211,6 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script>
     $(document).ready(function () {
-      // Função para verificar a posição da página em relação às âncoras
       function checkAnchorPosition() {
         var windowBottomPosition = $(window).scrollTop() + $(window).height();
         var windowHeight = $(window).height();
@@ -191,19 +222,15 @@
 
           var $anchor = $('a[href="#' + sectionId + '"]');
           if ($anchor.length) {
-            // Verifica se a seção está mais do que 50% visível na janela de visualização
             if (sectionOffset < windowBottomPosition - sectionHeight / 2 && sectionOffset + sectionHeight > $(window).scrollTop() + windowHeight / 2) {
-              // Remove a classe 'active' de todos os links
               $('a.nav-link').removeClass('active');
-              // Adiciona a classe 'active' ao link correspondente à seção visível
               $anchor.addClass('active');
-              return false; // Sair do loop após encontrar a primeira seção visível
+              return false;
             }
           }
         });
       }
 
-      // Função para mostrar ou ocultar o botão "Voltar ao Topo" dependendo da posição da página
       function toggleScrollTopButton() {
         if ($(window).scrollTop() > 0) {
           $('#scrollTopButton').fadeIn();
@@ -212,23 +239,20 @@
         }
       }
 
-      // Chama a função no carregamento da página e no evento de scroll
       $(window).on('load scroll', function () {
         checkAnchorPosition();
       });
 
-      // Botão para voltar ao topo
       $('#scrollTopButton button').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
       });
 
-      // Chama a função no carregamento da página e no evento de scroll
       $(window).on('load scroll', function () {
         toggleScrollTopButton();
       });
 
       $("#menuToogle").on('click', function () {
-        $("#right").toggleClass("ula");
+        $("#nav-bar").toggleClass("open");
       });
     });
 
@@ -237,40 +261,24 @@
 
   </script>
   <script>
-    // Get the modal
     var modalEast = document.getElementById("modalEast");
-    var modalBook = document.getElementById("modalBook");
 
     var btnEast = document.getElementById("shushi");
-    var btnBook = document.getElementById("book-button");
 
     var spanEast = document.getElementsByClassName("close")[0];
-    var closeBook = document.getElementById("closeBook");
 
     btnEast.onclick = function () {
       modalEast.style.display = "block";
-    }
-
-    btnBook.onclick = function () {
-      modalBook.style.display = "block";
     }
 
     spanEast.onclick = function () {
       modalEast.style.display = "none";
     }
 
-    closeBook.onclick = function () {
-      modalBook.style.display = "none";
-    }
-
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       if (event.target == modalEast) {
         modalEast.style.display = "none";
-      }
-
-      if (event.target == modalBook) {
-        modalBook.style.display = "none";
       }
     }
 
